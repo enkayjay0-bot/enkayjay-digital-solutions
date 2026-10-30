@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-# Add a Sitemap line with the absolute sitemap URL after the final domain is confirmed.
