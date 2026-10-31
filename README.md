@@ -34,26 +34,28 @@ window.ENKAYJAY_CONFIG = Object.freeze({
 - Blank, invalid or recognised placeholder values keep their related contact buttons disabled.
 - Real delivery still needs an owner-managed test from the live website.
 
-### Final domain
+### Final public URL — confirmed and applied
 
-In `website/index.html`, replace every occurrence of:
+The source metadata now uses:
 
 ```text
-https://your-domain.example
+https://enkayjay-digital-solutions.onrender.com
 ```
 
-with the final absolute website URL, preserving the existing paths:
+This is applied to the canonical URL, `og:url`, `og:image` and `twitter:image`. The social image resolves to:
 
-- Canonical URL
-- `og:url`
-- `og:image` — keep `/assets/social-preview.png`
-- `twitter:image` — keep `/assets/social-preview.png`
+```text
+https://enkayjay-digital-solutions.onrender.com/assets/social-preview.png
+```
 
-Example structure only: if the domain is `https://your-real-domain.com`, the social image URL becomes `https://your-real-domain.com/assets/social-preview.png`.
+Publish the updated `website/index.html` through your owner-managed Render workflow so these metadata corrections replace the older placeholder URLs on the live site.
 
-### PhotoHub
+### Portfolio showcases
 
-The current copy states only that PhotoHub is an Enkayjay project and is not publicly accessible. No live link or results are claimed. Add a fuller case study only when its details and visuals are approved.
+- **GigaRush** is labelled **Live Project** and links to `https://gigarush.onrender.com`. Its four approved portfolio screens are explicitly presented as sample-data previews.
+- **PhotoHub** is labelled **Project Preview** and **Offline — screenshots only**. Its eight approved screens have no live-project link.
+- The galleries include selectable thumbnails, adaptive desktop/mobile frames and an accessible click-to-enlarge viewer. All 24 full-size and thumbnail WebP assets are stored locally under `website/assets/portfolio/`.
+- No client quotes, measured results or unsupported project claims are included.
 
 ## 2. Preview locally
 
@@ -93,10 +95,13 @@ After your deployment, test the mobile menu, internal links, Copy enquiry and bo
 
 ## Editing and maintenance
 
-- Main page content: `website/index.html`
-- Colours, spacing and breakpoints: variables and rules at the top of `website/css/style.css`
+- Main page content and project-showcase markup: `website/index.html`
+- Core colours, spacing and breakpoints: variables and rules at the top of `website/css/style.css`
+- Portfolio-specific gallery and lightbox styling: `website/css/portfolio.css`
 - Contact settings: `website/js/config.js`
 - Menu, validation and contact behaviour: `website/js/main.js`
+- Portfolio gallery and lightbox behaviour: `website/js/portfolio.js`
+- Approved project images: `website/assets/portfolio/`
 - Social-sharing artwork: `website/assets/social-preview.png` (1200 × 630 PNG)
 
 Keep the existing section IDs (`home`, `services`, `portfolio`, `process`, `contact`) unless you also update every related navigation link and script reference.
@@ -105,8 +110,9 @@ Keep the existing section IDs (`home`, `services`, `portfolio`, `process`, `cont
 
 - [x] Confirmed WhatsApp number and business email added
 - [ ] Real WhatsApp and email delivery tested by the owner
-- [ ] Final domain URLs replaced
-- [ ] PhotoHub wording approved
+- [x] Final public URL applied to source metadata
+- [ ] Updated metadata published to the live Render site
+- [x] Approved portfolio screenshots, ordering and project-status labels applied
 - [ ] Website uploaded with folder structure intact
 - [ ] Mobile menu and internal links tested on the live domain
 - [ ] One real enquiry sent through each configured channel
