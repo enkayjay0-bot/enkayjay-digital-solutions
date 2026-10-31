@@ -55,7 +55,7 @@ A mobile-friendly website that presents your business clearly, showcases your se
 > Websites. Systems. Digital Products.  
 > +233256800142  
 > Enkayjay.skills2@gmail.com  
-> [Final website link]
+> https://enkayjay-digital-solutions.onrender.com
 
 ## 4. Short pitch for approaching businesses physically
 
@@ -116,7 +116,7 @@ Send once after a reasonable gap, such as 3–5 business days:
 
 **Today**
 
-- Add the final public URL to the website metadata, then complete the owner-managed Render deployment and real enquiry tests. Confirmed WhatsApp and email settings are already applied.
+- Publish the final metadata update through your owner-managed Render workflow and complete real enquiry tests. Confirmed contact settings and the public URL are already applied to the source package.
 - Approve the service offer, quote format and payment terms.
 - Choose two business categories you understand and add 30 qualified prospects to the tracker.
 

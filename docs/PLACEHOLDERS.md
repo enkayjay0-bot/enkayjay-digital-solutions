@@ -6,21 +6,24 @@
 |---|---|---|
 | Business WhatsApp | `233256800142` in `website/js/config.js`; displayed as `+233256800142` | Direct and prepared-enquiry WhatsApp links activate. Real delivery still requires an owner-managed live test. |
 | Monitored business email | `Enkayjay.skills2@gmail.com` in `website/js/config.js` | Direct and prepared-enquiry email links activate. Real delivery still requires an owner-managed live test. |
-| Hosting preference | Render | Owner-managed Static Site instructions are included in `RENDER-DEPLOYMENT.md`. Nothing has been deployed or connected. |
+| Hosting preference | Render | A public Render site is confirmed. Owner-managed Static Site instructions are included in `RENDER-DEPLOYMENT.md`; no service was connected or modified by the assistant. |
+| Final public URL | `https://enkayjay-digital-solutions.onrender.com` | Applied to the canonical URL, `og:url`, `og:image` and `twitter:image` in the source package. The outreach signature also uses this URL. |
 
-The contact setup notice should disappear when JavaScript loads with these confirmed settings. If it remains visible, check that `js/config.js` is loading correctly.
+The contact setup notice should disappear when JavaScript loads with these confirmed settings. If it remains visible during a real browser check, check that `js/config.js` is loading correctly.
 
-## Required before final public launch
+## Required source placeholders
 
-| Item | Exact location | Current safe behaviour | Action required |
-|---|---|---|---|
-| Final public domain or Render `.onrender.com` URL | `website/index.html` → canonical, `og:url`, `og:image`, `twitter:image` | Uses the reserved placeholder base `https://your-domain.example`. | Replace every occurrence with the final absolute URL, retaining `/assets/social-preview.png` in the two image metadata fields. Update and redeploy before promoting the site. |
+**None.** All required contact and public-URL placeholders in the source package have been completed.
+
+### Live metadata publication still required
+
+An external read-only check on 30 October 2026 confirmed that the public homepage and social image return HTTP 200. The live HTML still contained the older `https://your-domain.example` metadata at that check. The revised source now has the correct Render URL; publish the updated `website/index.html` before running the final social-sharing validators.
 
 ## Optional content approval
 
 | Item | Location | Status |
 |---|---|---|
-| Fuller PhotoHub case study | `website/index.html` → Portfolio | Only the supplied project name and offline status are presented. Add approved project details, visuals or a live link only after verifying them. No expansion is required for the honest offline listing. |
+| Additional project case-study claims | `website/index.html` → Portfolio | The approved GigaRush and PhotoHub screenshot showcases are complete. Add client quotes, measured results, further technical claims or a PhotoHub live link only if separately verified and approved; none is required for the current portfolio. |
 
 ## Intentionally not placeholders
 
@@ -32,6 +35,6 @@ The contact setup notice should disappear when JavaScript loads with these confi
 
 ## Template-only fields in outreach documents
 
-The messages in `docs/CLIENT-ACQUISITION.md` still require personalisation such as `[Name]`, `[Business Name]`, `[Your Name]`, `[specific truthful observation]` and `[Final website link]`. The confirmed WhatsApp number and business email have already been inserted into the cold-email signature.
+The messages in `docs/CLIENT-ACQUISITION.md` still require personalisation such as `[Name]`, `[Business Name]`, `[Your Name]` and `[specific truthful observation]`. The confirmed WhatsApp number, business email and public website URL have already been inserted into the cold-email signature.
 
 The contact details used for blank/placeholder configuration tests in `tests/browser-tests.js` are test-only values intercepted during automated testing. They do not replace the confirmed production settings.

@@ -69,7 +69,8 @@ Do not set the publish directory to the full package root. Doing so could expose
 - [ ] One real email enquiry is sent by you and received
 - [ ] Copy enquiry works on your phone and desktop browser
 - [ ] Canonical and Open Graph URLs match the final public URL
-- [ ] `https://YOUR-FINAL-DOMAIN/assets/social-preview.png` opens the branded image
+- [ ] `https://enkayjay-digital-solutions.onrender.com/sitemap.xml` loads correctly
+- [ ] `https://enkayjay-digital-solutions.onrender.com/assets/social-preview.png` opens the branded image
 - [ ] Social-sharing preview is checked after the final metadata is live
 - [ ] The contact setup notice is no longer visible
 
