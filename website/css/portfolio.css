@@ -5,8 +5,22 @@
 
 .portfolio-showcase {
   background:
-    radial-gradient(circle at 95% 12%, rgba(226, 190, 99, 0.055), transparent 25%),
+    radial-gradient(circle at 95% 12%, rgba(58, 102, 234, 0.055), transparent 25%),
     var(--navy-900);
+}
+
+.portfolio-film-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin: -20px 0 30px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.portfolio-film-link .btn {
+  min-height: 42px;
 }
 
 .portfolio-category {
@@ -18,7 +32,7 @@
 }
 
 .portfolio-category > span:first-child {
-  color: var(--gold);
+  color: var(--cobalt);
   font-size: 0.7rem;
   font-weight: 750;
   letter-spacing: 0.1em;
@@ -26,7 +40,7 @@
 
 .portfolio-category p {
   margin: 0;
-  color: var(--gold-light);
+  color: var(--muted);
   font-size: 0.72rem;
   font-weight: 750;
   letter-spacing: 0.14em;
@@ -65,7 +79,7 @@
   right: 32px;
   left: 32px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(226, 190, 99, 0.48), transparent);
+  background: linear-gradient(90deg, transparent, rgba(58, 102, 234, 0.48), transparent);
   content: "";
 }
 
@@ -112,8 +126,8 @@
 }
 
 .status-preview {
-  background: rgba(226, 190, 99, 0.055);
-  color: var(--gold-light);
+  background: rgba(58, 102, 234, 0.055);
+  color: var(--muted);
 }
 
 .showcase-count {
@@ -157,7 +171,7 @@
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: 9px;
-  color: var(--gold-light);
+  color: var(--muted);
   font-size: 0.76rem;
   font-weight: 700;
 }
@@ -240,7 +254,7 @@
 
 .browser-label {
   margin-left: auto;
-  color: #9aaabe;
+  color: var(--muted);
   font-size: 0.52rem;
   font-weight: 650;
   letter-spacing: 0.12em;
@@ -258,7 +272,7 @@
   width: auto;
   max-width: 100%;
   height: 100%;
-  border: 5px solid #1b2a3c;
+  border: 5px solid #1c2a42;
   border-radius: 25px;
 }
 
@@ -285,7 +299,7 @@
   border: 1px solid var(--border-strong);
   border-radius: 8px;
   background: rgba(7, 17, 31, 0.92);
-  color: var(--gold-light);
+  color: var(--muted);
   font-size: 0.67rem;
   font-weight: 700;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
@@ -313,7 +327,7 @@
 
 .gallery-caption-row > span {
   flex-shrink: 0;
-  color: var(--gold);
+  color: var(--cobalt);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -369,7 +383,7 @@
 
 .thumb-meta > span:first-child {
   flex-shrink: 0;
-  color: var(--gold);
+  color: var(--cobalt);
   font-size: 0.61rem;
   font-weight: 750;
   letter-spacing: 0.06em;
@@ -382,9 +396,9 @@
 }
 
 .gallery-thumb.is-active {
-  border-color: var(--gold);
-  background: rgba(226, 190, 99, 0.065);
-  color: var(--gold-light);
+  border-color: var(--cobalt);
+  background: rgba(58, 102, 234, 0.065);
+  color: var(--muted);
 }
 
 /* Lightbox */
@@ -429,7 +443,7 @@ body.lightbox-open {
 
 .lightbox-header p {
   margin: 0 0 4px;
-  color: var(--gold);
+  color: var(--cobalt);
   font-size: 0.59rem;
   font-weight: 750;
   letter-spacing: 0.14em;
@@ -510,7 +524,7 @@ body.lightbox-open {
 }
 
 .lightbox-caption-wrap span {
-  color: var(--gold);
+  color: var(--cobalt);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -525,8 +539,8 @@ body.lightbox-open {
   .gallery-expand:hover .gallery-expand-hint,
   .lightbox-close:hover,
   .lightbox-control:hover {
-    border-color: var(--gold);
-    background-color: rgba(226, 190, 99, 0.08);
+    border-color: var(--cobalt);
+    background-color: rgba(58, 102, 234, 0.08);
   }
 }
 
@@ -543,6 +557,13 @@ body.lightbox-open {
 }
 
 @media (max-width: 720px) {
+  .portfolio-film-link {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    margin: -18px 0 25px;
+  }
+
   .project-showcase {
     padding: 22px;
     border-radius: 18px;
@@ -581,7 +602,7 @@ body.lightbox-open {
     overflow-x: auto;
     padding: 1px 1px 10px;
     scroll-snap-type: x mandatory;
-    scrollbar-color: var(--gold-dark) transparent;
+    scrollbar-color: var(--cobalt) transparent;
     scrollbar-width: thin;
   }
 
