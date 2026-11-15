@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enkayjay Digital Solutions | Websites &amp; Digital Systems</title>
+  <title>Enkayjay Digital Solutions | Websites, Systems &amp; Digital Products</title>
   <meta name="description" content="Professional websites, digital systems and digital products for small businesses in Ghana. Clear scope, mobile-first design and easy customer enquiries.">
   <meta name="author" content="Enkayjay Digital Solutions">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#0B1324">
   <meta name="color-scheme" content="dark">
 
   <!-- Confirmed public URL: https://enkayjay-digital-solutions.onrender.com/ -->
@@ -33,6 +33,8 @@
   <meta name="twitter:image:alt" content="Enkayjay Digital Solutions — Websites. Systems. Digital Products.">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/brand/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/brand/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/portfolio.css">
@@ -43,11 +45,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Enkayjay Digital Solutions home">
-        <span class="brand-mark" aria-hidden="true">EJ</span>
-        <span class="brand-text">
-          <strong>ENKAYJAY</strong>
-          <span>DIGITAL SOLUTIONS</span>
-        </span>
+        <img class="brand-logo" src="assets/brand/enkayjay-horizontal-white.svg" alt="Enkayjay Digital Solutions" width="216" height="72">
       </a>
 
       <nav class="site-nav" aria-label="Primary">
@@ -59,7 +57,7 @@
         </ul>
       </nav>
 
-      <a class="btn btn-primary btn-sm header-cta" href="#contact">Start a project</a>
+      <a class="btn btn-primary btn-sm header-cta" href="#contact" data-service="Business website">Get a Website</a>
 
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span class="nav-toggle-bar"></span>
@@ -75,7 +73,7 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#process">How we work</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="btn btn-primary" href="#contact">Start a project</a></li>
+        <li><a class="btn btn-primary" href="#contact" data-service="Business website">Get a Website</a></li>
       </ul>
     </nav>
   </header>
@@ -93,7 +91,7 @@
             We design mobile-friendly websites and practical digital solutions for small businesses in Ghana and beyond—making it easier for people to understand your offer and take the next step.
           </p>
           <div class="hero-actions" data-reveal style="--d: .18s">
-            <a class="btn btn-primary" href="#contact" data-service="Business website">Request a website <span aria-hidden="true">→</span></a>
+            <a class="btn btn-primary" href="#contact" data-service="Business website">Get a Website <span aria-hidden="true">→</span></a>
             <a class="btn btn-ghost" href="#services">Explore services</a>
           </div>
           <ul class="hero-checks" data-reveal style="--d: .24s" aria-label="What to expect">
@@ -155,13 +153,13 @@
             </div>
             <p class="card-label">01 / WEBSITES</p>
             <h3>Website design &amp; development</h3>
-            <p>A professional online presence that explains your value and gives visitors a clear reason to get in touch.</p>
+            <p>Mobile-first websites help people understand your offer, explore what you provide and take a useful next step. Menus, maps, catalogues, WhatsApp enquiries and ordering paths are scoped to your real workflow.</p>
             <ul class="service-list">
-              <li>Business and service websites</li>
-              <li>Responsive, mobile-first layouts</li>
-              <li>WhatsApp, email and enquiry paths</li>
+              <li>Business, restaurant and hospitality websites</li>
+              <li>Portfolio sites, product catalogues and e-commerce</li>
+              <li>Custom development, redesign and optimisation</li>
             </ul>
-            <a class="link-arrow" href="#contact" data-service="Business website">Request a website <span aria-hidden="true">→</span></a>
+            <a class="link-arrow" href="#contact" data-service="Business website">Get a Website <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card service-card featured-card" data-reveal style="--d: .12s">
@@ -169,12 +167,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17.5 14v7M14 17.5h7"/></svg>
             </div>
             <p class="card-label">02 / SYSTEMS</p>
-            <h3>Digital systems</h3>
-            <p>Custom web systems shaped around the way your business handles information, tasks and daily work.</p>
+            <h3>Business systems &amp; automation</h3>
+            <p>Practical digital systems shaped around how your business handles information, repetitive work and customer enquiries.</p>
             <ul class="service-list">
-              <li>Dashboards and internal tools</li>
-              <li>Workflow and process automation</li>
-              <li>Integrations based on your needs</li>
+              <li>Custom business systems, dashboards, software and applications</li>
+              <li>Workflow design and process automation</li>
+              <li>WhatsApp automation and integrations, scoped to available services</li>
             </ul>
             <a class="link-arrow" href="#contact" data-service="Digital system">Discuss a system <span aria-hidden="true">→</span></a>
           </article>
@@ -185,12 +183,13 @@
             </div>
             <p class="card-label">03 / PRODUCTS</p>
             <h3>Digital products</h3>
-            <p>Focused digital tools and web-based products developed from a clear concept and a defined user need.</p>
+            <p>Business-focused tools, applications and platforms developed from a clear concept, agreed scope and defined user need.</p>
             <ul class="service-list">
-              <li>Product planning and interface design</li>
-              <li>Web tools and minimum viable products</li>
-              <li>Practical iterations through launch</li>
+              <li>Custom digital product planning and development</li>
+              <li>Web-based tools, applications and platforms</li>
+              <li>Prototype and iterative delivery, labelled honestly</li>
             </ul>
+            <p class="service-note">In-progress concepts are presented as previews, not completed client products.</p>
             <a class="link-arrow" href="#contact" data-service="Digital product">Discuss a product <span aria-hidden="true">→</span></a>
           </article>
         </div>
@@ -237,6 +236,7 @@
           </div>
           <p class="section-lead">Explore selected interfaces across live websites and offline project previews. Project access and status are always stated plainly.</p>
         </div>
+        <div class="portfolio-film-link" data-reveal><span>Want the quick tour?</span><a class="btn btn-ghost btn-sm" href="enkayjay-portfolio-showreel.html">Watch the 45-second showreel <span aria-hidden="true">↗</span></a></div>
 
         <div class="portfolio-group" aria-label="Live projects">
           <div class="portfolio-category" data-reveal>
@@ -261,31 +261,31 @@
 
             <div class="project-gallery" data-gallery="gigarush" data-project-name="GigaRush" data-active-orientation="desktop" data-reveal>
               <div class="gallery-stage">
-                <a class="gallery-expand" href="assets/portfolio/gigarush/storefront-desktop.webp" data-gallery-open aria-label="Enlarge GigaRush screenshot: Storefront homepage — desktop">
+                <a class="gallery-expand" href="assets/portfolio/gigarush/storefront-desktop.webp" data-gallery-open>
                   <span class="gallery-frame is-desktop" data-gallery-frame>
                     <span class="browser-bar" aria-hidden="true"><span class="browser-dots"><span></span><span></span><span></span></span><span class="browser-label">DESKTOP / 16:10</span></span>
                     <img data-gallery-image src="assets/portfolio/gigarush/storefront-desktop.webp" alt="GigaRush storefront homepage on desktop" width="1600" height="1000" loading="lazy" decoding="async">
                   </span>
-                  <span class="gallery-expand-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>Enlarge</span>
+                  <span class="gallery-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>Enlarge</span>
                 </a>
               </div>
               <div class="gallery-caption-row" aria-live="polite" aria-atomic="true">
                 <p data-gallery-caption>Storefront homepage — desktop</p><span data-gallery-counter>01 / 04</span>
               </div>
               <div class="gallery-thumbnails" role="group" aria-label="GigaRush screenshot gallery">
-                <a class="gallery-thumb is-active" href="assets/portfolio/gigarush/storefront-desktop.webp" data-gallery-thumb data-index="0" data-full="assets/portfolio/gigarush/storefront-desktop.webp" data-caption="Storefront homepage — desktop" data-alt="GigaRush storefront homepage on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-current="true" aria-label="Show screenshot 1 of 4: Storefront homepage — desktop">
+                <a class="gallery-thumb is-active" href="assets/portfolio/gigarush/storefront-desktop.webp" data-gallery-thumb data-index="0" data-full="assets/portfolio/gigarush/storefront-desktop.webp" data-caption="Storefront homepage — desktop" data-alt="GigaRush storefront homepage on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-current="true">
                   <span class="thumb-media"><img src="assets/portfolio/gigarush/storefront-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>01</span><span>Storefront</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/gigarush/checkout-mobile.webp" data-gallery-thumb data-index="1" data-full="assets/portfolio/gigarush/checkout-mobile.webp" data-caption="Bundle selection and checkout — mobile" data-alt="GigaRush mobile bundle selection and checkout screen" data-orientation="mobile" data-width="430" data-height="932" aria-label="Show screenshot 2 of 4: Bundle selection and checkout — mobile">
+                <a class="gallery-thumb" href="assets/portfolio/gigarush/checkout-mobile.webp" data-gallery-thumb data-index="1" data-full="assets/portfolio/gigarush/checkout-mobile.webp" data-caption="Bundle selection and checkout — mobile" data-alt="GigaRush mobile bundle selection and checkout screen" data-orientation="mobile" data-width="430" data-height="932">
                   <span class="thumb-media"><img src="assets/portfolio/gigarush/checkout-mobile-thumb.webp" alt="" width="240" height="520" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>02</span><span>Mobile checkout</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/gigarush/partner-dashboard-desktop.webp" data-gallery-thumb data-index="2" data-full="assets/portfolio/gigarush/partner-dashboard-desktop.webp" data-caption="Partner workspace — desktop" data-alt="GigaRush partner dashboard on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-label="Show screenshot 3 of 4: Partner workspace — desktop">
+                <a class="gallery-thumb" href="assets/portfolio/gigarush/partner-dashboard-desktop.webp" data-gallery-thumb data-index="2" data-full="assets/portfolio/gigarush/partner-dashboard-desktop.webp" data-caption="Partner workspace — desktop" data-alt="GigaRush partner dashboard on desktop" data-orientation="desktop" data-width="1600" data-height="1000">
                   <span class="thumb-media"><img src="assets/portfolio/gigarush/partner-dashboard-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>03</span><span>Partner dashboard</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/gigarush/admin-hq-desktop.webp" data-gallery-thumb data-index="3" data-full="assets/portfolio/gigarush/admin-hq-desktop.webp" data-caption="Admin HQ — desktop" data-alt="GigaRush administrative headquarters dashboard on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-label="Show screenshot 4 of 4: Admin HQ — desktop">
+                <a class="gallery-thumb" href="assets/portfolio/gigarush/admin-hq-desktop.webp" data-gallery-thumb data-index="3" data-full="assets/portfolio/gigarush/admin-hq-desktop.webp" data-caption="Admin HQ — desktop" data-alt="GigaRush administrative headquarters dashboard on desktop" data-orientation="desktop" data-width="1600" data-height="1000">
                   <span class="thumb-media"><img src="assets/portfolio/gigarush/admin-hq-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>04</span><span>Admin HQ</span></span>
                 </a>
@@ -317,47 +317,47 @@
 
             <div class="project-gallery" data-gallery="photohub" data-project-name="PhotoHub" data-active-orientation="desktop" data-reveal>
               <div class="gallery-stage">
-                <a class="gallery-expand" href="assets/portfolio/photohub/homepage-desktop.webp" data-gallery-open aria-label="Enlarge PhotoHub screenshot: PhotoHub homepage — desktop">
+                <a class="gallery-expand" href="assets/portfolio/photohub/homepage-desktop.webp" data-gallery-open>
                   <span class="gallery-frame is-desktop" data-gallery-frame>
                     <span class="browser-bar" aria-hidden="true"><span class="browser-dots"><span></span><span></span><span></span></span><span class="browser-label">DESKTOP / 16:10</span></span>
                     <img data-gallery-image src="assets/portfolio/photohub/homepage-desktop.webp" alt="PhotoHub homepage with event search on desktop" width="1600" height="1000" loading="lazy" decoding="async">
                   </span>
-                  <span class="gallery-expand-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>Enlarge</span>
+                  <span class="gallery-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>Enlarge</span>
                 </a>
               </div>
               <div class="gallery-caption-row" aria-live="polite" aria-atomic="true">
                 <p data-gallery-caption>PhotoHub homepage — desktop</p><span data-gallery-counter>01 / 08</span>
               </div>
               <div class="gallery-thumbnails" role="group" aria-label="PhotoHub screenshot gallery">
-                <a class="gallery-thumb is-active" href="assets/portfolio/photohub/homepage-desktop.webp" data-gallery-thumb data-index="0" data-full="assets/portfolio/photohub/homepage-desktop.webp" data-caption="PhotoHub homepage — desktop" data-alt="PhotoHub homepage with event search on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-current="true" aria-label="Show screenshot 1 of 8: PhotoHub homepage — desktop">
+                <a class="gallery-thumb is-active" href="assets/portfolio/photohub/homepage-desktop.webp" data-gallery-thumb data-index="0" data-full="assets/portfolio/photohub/homepage-desktop.webp" data-caption="PhotoHub homepage — desktop" data-alt="PhotoHub homepage with event search on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-current="true">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/homepage-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>01</span><span>Homepage</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/homepage-mobile.webp" data-gallery-thumb data-index="1" data-full="assets/portfolio/photohub/homepage-mobile.webp" data-caption="Homepage and event search — mobile" data-alt="PhotoHub mobile homepage with event search and calls to action" data-orientation="mobile" data-width="780" data-height="1688" aria-label="Show screenshot 2 of 8: Homepage and event search — mobile">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/homepage-mobile.webp" data-gallery-thumb data-index="1" data-full="assets/portfolio/photohub/homepage-mobile.webp" data-caption="Homepage and event search — mobile" data-alt="PhotoHub mobile homepage with event search and calls to action" data-orientation="mobile" data-width="780" data-height="1688">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/homepage-mobile-thumb.webp" alt="" width="240" height="519" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>02</span><span>Mobile homepage</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/interhouse-desktop.webp" data-gallery-thumb data-index="2" data-full="assets/portfolio/photohub/interhouse-desktop.webp" data-caption="Event album experience — desktop" data-alt="Inter House Sports event album on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-label="Show screenshot 3 of 8: Event album experience — desktop">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/interhouse-desktop.webp" data-gallery-thumb data-index="2" data-full="assets/portfolio/photohub/interhouse-desktop.webp" data-caption="Event album experience — desktop" data-alt="Inter House Sports event album on desktop" data-orientation="desktop" data-width="1600" data-height="1000">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/interhouse-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>03</span><span>Event album</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/interhouse-mobile.webp" data-gallery-thumb data-index="3" data-full="assets/portfolio/photohub/interhouse-mobile.webp" data-caption="Event album and photo search — mobile" data-alt="Inter House Sports event album and photo search on mobile" data-orientation="mobile" data-width="780" data-height="1688" aria-label="Show screenshot 4 of 8: Event album and photo search — mobile">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/interhouse-mobile.webp" data-gallery-thumb data-index="3" data-full="assets/portfolio/photohub/interhouse-mobile.webp" data-caption="Event album and photo search — mobile" data-alt="Inter House Sports event album and photo search on mobile" data-orientation="mobile" data-width="780" data-height="1688">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/interhouse-mobile-thumb.webp" alt="" width="240" height="519" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>04</span><span>Mobile album</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/cadet-desktop.webp" data-gallery-thumb data-index="4" data-full="assets/portfolio/photohub/cadet-desktop.webp" data-caption="Cadet competition gallery — desktop" data-alt="10th Sector Cadet Competition event album on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-label="Show screenshot 5 of 8: Cadet competition gallery — desktop">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/cadet-desktop.webp" data-gallery-thumb data-index="4" data-full="assets/portfolio/photohub/cadet-desktop.webp" data-caption="Cadet competition gallery — desktop" data-alt="10th Sector Cadet Competition event album on desktop" data-orientation="desktop" data-width="1600" data-height="1000">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/cadet-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>05</span><span>Cadet gallery</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/photogrid-desktop.webp" data-gallery-thumb data-index="5" data-full="assets/portfolio/photohub/photogrid-desktop.webp" data-caption="Event photo grid — desktop" data-alt="PhotoHub event photo grid on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-label="Show screenshot 6 of 8: Event photo grid — desktop">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/photogrid-desktop.webp" data-gallery-thumb data-index="5" data-full="assets/portfolio/photohub/photogrid-desktop.webp" data-caption="Event photo grid — desktop" data-alt="PhotoHub event photo grid on desktop" data-orientation="desktop" data-width="1600" data-height="1000">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/photogrid-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>06</span><span>Photo grid</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/photogrid-mobile.webp" data-gallery-thumb data-index="6" data-full="assets/portfolio/photohub/photogrid-mobile.webp" data-caption="Photo selection and cart actions — mobile" data-alt="PhotoHub mobile photo grid with selection and cart controls" data-orientation="mobile" data-width="780" data-height="1688" aria-label="Show screenshot 7 of 8: Photo selection and cart actions — mobile">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/photogrid-mobile.webp" data-gallery-thumb data-index="6" data-full="assets/portfolio/photohub/photogrid-mobile.webp" data-caption="Photo selection and cart actions — mobile" data-alt="PhotoHub mobile photo grid with selection and cart controls" data-orientation="mobile" data-width="780" data-height="1688">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/photogrid-mobile-thumb.webp" alt="" width="240" height="519" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>07</span><span>Mobile photo grid</span></span>
                 </a>
-                <a class="gallery-thumb" href="assets/portfolio/photohub/admin-dashboard-desktop.webp" data-gallery-thumb data-index="7" data-full="assets/portfolio/photohub/admin-dashboard-desktop.webp" data-caption="Photography business dashboard — desktop" data-alt="PhotoHub administrative dashboard on desktop" data-orientation="desktop" data-width="1600" data-height="1000" aria-label="Show screenshot 8 of 8: Photography business dashboard — desktop">
+                <a class="gallery-thumb" href="assets/portfolio/photohub/admin-dashboard-desktop.webp" data-gallery-thumb data-index="7" data-full="assets/portfolio/photohub/admin-dashboard-desktop.webp" data-caption="Photography business dashboard — desktop" data-alt="PhotoHub administrative dashboard on desktop" data-orientation="desktop" data-width="1600" data-height="1000">
                   <span class="thumb-media"><img src="assets/portfolio/photohub/admin-dashboard-desktop-thumb.webp" alt="" width="480" height="300" loading="lazy" decoding="async"></span>
                   <span class="thumb-meta"><span>08</span><span>Admin dashboard</span></span>
                 </a>
@@ -596,14 +596,13 @@
     <div class="container footer-main">
       <div class="footer-brand-block">
         <a class="brand" href="#home" aria-label="Enkayjay Digital Solutions home">
-          <span class="brand-mark" aria-hidden="true">EJ</span>
-          <span class="brand-text"><strong>ENKAYJAY</strong><span>DIGITAL SOLUTIONS</span></span>
+          <img class="brand-logo" src="assets/brand/enkayjay-horizontal-white.svg" alt="Enkayjay Digital Solutions" width="216" height="72">
         </a>
         <p>Websites. Systems. Digital Products.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <div><h2>Explore</h2><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#process">How we work</a></div>
-        <div><h2>Get started</h2><a href="#contact">Project enquiry</a><a href="#contact" data-service="Business website">Request a website</a><a href="#top">Back to top ↑</a></div>
+        <div><h2>Get started</h2><a href="#contact">Project enquiry</a><a href="#contact" data-service="Business website">Get a Website</a><a href="#top">Back to top ↑</a></div>
       </nav>
     </div>
     <div class="container footer-bottom">
