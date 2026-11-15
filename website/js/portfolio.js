@@ -83,7 +83,6 @@
       image.setAttribute("width", link.getAttribute("data-width"));
       image.setAttribute("height", link.getAttribute("data-height"));
       openLink.setAttribute("href", link.getAttribute("data-full"));
-      openLink.setAttribute("aria-label", "Enlarge " + gallery.name + " screenshot: " + captionText);
       caption.textContent = captionText;
       counter.textContent = counterText(index, total);
       gallery.element.setAttribute("data-active-orientation", orientation);
@@ -114,6 +113,14 @@
     dialog.showModal();
     document.body.classList.add("lightbox-open");
     if (closeButton) closeButton.focus();
+  }
+
+  function closeLightbox() {
+    if (dialog && dialog.open) dialog.close();
+    document.body.classList.remove("lightbox-open");
+    activeGallery = null;
+    if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+    lastFocused = null;
   }
 
   function navigateLightbox(direction) {
@@ -150,9 +157,7 @@
   });
 
   if (closeButton) {
-    closeButton.addEventListener("click", function () {
-      if (dialog && dialog.open) dialog.close();
-    });
+    closeButton.addEventListener("click", closeLightbox);
   }
 
   if (previousButton) {
@@ -169,13 +174,19 @@
 
   if (dialog) {
     dialog.addEventListener("click", function (event) {
-      if (event.target === dialog) dialog.close();
+      if (event.target === dialog) closeLightbox();
+    });
+
+    dialog.addEventListener("cancel", function (event) {
+      event.preventDefault();
+      closeLightbox();
     });
 
     dialog.addEventListener("close", function () {
       document.body.classList.remove("lightbox-open");
       activeGallery = null;
       if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+      lastFocused = null;
     });
 
     document.addEventListener("keydown", function (event) {
